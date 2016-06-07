@@ -12,8 +12,8 @@ driver.close()
 
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
-server.login("hmn212008@gmail.com", "")
+server.login("email", "")
 
 msg = "YOUR MESSAGE!"
-server.sendmail("hmn212008@gmail.com", "johnson.hu@nautiluscapital.net", msg)
+server.sendmail("from", "to", msg)
 server.quit()
